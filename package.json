@@ -17,6 +17,8 @@
         "react-dom": "16.13.1"
     },
     "devDependencies": {
-        "compose-function": "^3.0.3"
+        "@types/node": "^14.0.24",
+        "compose-function": "^3.0.3",
+        "typescript": "^3.9.7"
     }
 }
