@@ -45,10 +45,8 @@ export default function App(props: any) {
           SDK: {
             "browser.mdx": true,
             "node.mdx": true,
+            "react.mdx": true,
             "golang.mdx": true,
-            "python.mdx": true,
-            "ruby.mdx": true,
-            "elixir.mdx": true,
           },
         }}
       >
