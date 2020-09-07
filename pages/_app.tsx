@@ -42,6 +42,12 @@ export default function App(props: any) {
         ]}
         sidebarOrdering={{
           "index.mdx": true,
+          Help: {
+            architecture: true,
+            environments: true,
+            features: true,
+            slack: true,
+          },
           SDK: {
             "browser.mdx": true,
             "node.mdx": true,

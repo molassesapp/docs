@@ -2,33 +2,38 @@
 name: Getting started
 ---
 
-import { Playground } from 'dokz'
+import { Playground } from "dokz";
 
-# Main Heading
+# Getting Started
 
-Officia do eu reprehenderit laborum exercitation eu nisi deserunt aliqua consequat eiusmod.
+Welcome to Molasses! I built Molasses so that every team can have the tools to perform safe and frequent deployments.
 
-Duis incididunt fugiat est aliqua deserunt do aliquip laboris in exercitation laboris nulla minim incididunt.
+Molasses is built to make development easy, but also be fast. [Learn more about Molasses' architecture](/architecture)
 
-## Second Heading
+It takes just a few minutes to get started with Molasses:
 
-Quis ullamco id duis sit ipsum laborum fugiat occaecat. Commodo aliqua adipisicing non nisi. Dolore aute magna cupidatat qui quis laboris. Irure veniam deserunt veniam ullamco anim pariatur deserunt. Amet commodo aliqua ut fugiat sunt pariatur ullamco cillum duis ipsum amet anim incididunt. Ut esse dolore in ullamco enim sit cillum eu labore consectetur labore sunt.
+When you sign up for Molasses, the app guides you through setting up your environments, API Keys, and your first feature flag. but here's the steps to get started:
 
-### Third Heading
-
-Here is some code
+- **Install** Install the Molasses SDK package for your project. eg `npm install --save @molassesapp/molasses-server`
+- **Configure** Make sure your [environment](/environments), it's API Key, and the features you need are configured. You can configure Molasses to do simple toggles or complex A/B tests. [Learn more >](/features)
+- **Setup** Copy the feature name and the API key, use their values to initiate a connection with Molasses.
+- **Code** Write your new feature and wrap it with one of Molasses' evaluation tools. For example:
 
 ```js
-const x = 'friendly'
-console.log('hello ' + x + ' world')
+if (client.isActive("NEW_CHECKOUT")) {
+  // do the new thing
+} else {
+  // do the normal thing
+}
 ```
 
-## Using the playground
+- **Collect Feedback** (Optionally) collect metrics about how it worked [learn more about experiments](/features)
 
-You can use live react code to display react component with a preview
+---
 
-<Playground>
-    <div style={{ width: 100, height: 100, background: 'lightblue' }}>
-        hello everyone
-    </div>
-</Playground>
+Molasses offers a robust audit log and integrations to enhance your toggling experience:
+
+For more info:
+
+- [Audit Log](/audit-log)
+- [Slack Integration](/slack)

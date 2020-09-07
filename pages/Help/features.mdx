@@ -1,0 +1,38 @@
+---
+name: Features
+---
+
+# Feature Flag Configuration
+
+Features in Molasses provide a number of ways to be configured.
+
+## Name, Description, and Tags
+
+The name of the feature flag is a unique name that is used to identify a feature flag in the client SDK's.
+
+The description field is for your information to idenitfy what a feature does.
+
+You can categorize features using tags. Tags are a great way to organize a suite of flags for a larger feature (all flags related to the new rate calculator) or a portion of your application (all flags related to the administration part of your application).
+
+## Active
+
+This is the overall active toggle for your feature flag. If it is set to `off` then the feature is completely off. However if a feature flag is to `on`, there can be many factors whether a user has the flag active.
+
+## Mode
+
+Molasses supports several different configurations.
+
+### `On/Off`
+
+This is our simple mode. If a feature is at 100% all users will receive the experiment, while at 0% `isActive` will always return false. If it is a different value then 100% or 0%, then a percentage of users who have unique IDs will receive the test. Note: `isActive` calls without a user will return false in these scenarios.
+
+### `A/B Test`
+
+This is a more advanced mode, where users can be put into two additional segments - they can always receive the experiment, all receive the control or be in the group that may receive the experiment driven by the percentage slider.
+
+For each segment (only control, only experiment), you can define a set of parameters that will determine if a user is part of a segment.
+
+![Feature flag configuration](/control.png)
+![Feature flag configuration](/experiment.png)
+
+![Feature flag configuration](/feature-configuration.png)
