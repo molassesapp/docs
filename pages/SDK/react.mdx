@@ -6,7 +6,7 @@ import { Playground } from "dokz";
 
 # React JavaScript Sdk
 
-the React (with TypeScript support) SDK for Molasses. It allows you to evaluate user's status for a feature. It also helps simplify logging events for A/B testing.
+the React (with TypeScript support) SDK for Molasses. It allows you to evaluate a user's status for a feature. It also helps simplify logging events for A/B testing.
 
 `react-molasses` offers a provider with hooks and `with` support. Once initialized, it takes microseconds to evaluate if a user is active. `react-molasses` does rely on `molasses-js` as a client.
 
@@ -75,12 +75,12 @@ A component to evaluate a Feature by name. It can be used in several different w
 
 #### Props
 
-| Prop   | required | type                     | description                                          |
-| ------ | -------- | ------------------------ | ---------------------------------------------------- |
-| name   | required | `string`                 | The name of the feature to be evaluated              |
-| user   | optional | `User`                   | The user who to evaluate against                     |
-| render | optional | `Function | JSX.Element` | What to render based on the result of the evaluation |
-| render | optional | `Function | JSX.Element` | What to render based on the result of the evaluation |
+| Prop   | required | type      | description                             |
+| ------ | -------- | --------- | --------------------------------------- |
+| name   | required | `string`  | The name of the feature to be evaluated |
+| user   | optional | `User`    | The user who to evaluate against        |
+| render | optional | `Function | JSX.Element`                            | What to render based on the result of the evaluation |
+| render | optional | `Function | JSX.Element`                            | What to render based on the result of the evaluation |
 
 #### Examples
 

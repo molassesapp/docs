@@ -4,4 +4,6 @@ name: Architecture
 
 # Molasses' Architecture
 
-Molasses is built to be fast for your workload. When you create or edit a feature flag, the feature flag delivery service is updated and you can access it through our scabale serverless infrastructure. The clients actively poll for any updates so there is no reason to fear a blocking call.
+Molasses is built to be fast for your workloads. When you modify a feature flag, the feature flag delivery service is updated with the latest changes.
+
+The Node and Golang clients use SSE to get updates pushed directly to them. While other clients use polling. After initialization, the features are populated in the client and there is no reason to fear a blocking call.
