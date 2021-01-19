@@ -24,7 +24,11 @@ Molasses supports several different configurations.
 
 ### `On/Off`
 
-This is our simple mode. If a feature is at 100% all users will receive the experiment, while at 0% `isActive` will always return false. If it is a different value then 100% or 0%, then a percentage of users who have unique IDs will receive the test. Note: `isActive` calls without a user will return false in these scenarios.
+This is our simplest mode. A feature is either active or not for all users.
+
+### `Percentage`
+
+If a feature is at 100% all users will receive the experiment, while at 0% `isActive` will always return false. If it is a different value then 100% or 0%, then a percentage of users who have unique IDs will receive the test. Note: `isActive` calls without a user will return false in these scenarios.
 
 ### `A/B Test`
 

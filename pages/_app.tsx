@@ -21,7 +21,11 @@ export default function App(props: any) {
       <DokzProvider
         headerLogo={
           <Flex>
-            <img src="https://www.molasses.app/pirateship.png" width="50" />
+            <img
+              src="https://www.molasses.app/pirateship.png"
+              width="50"
+              height="45"
+            />
             <Box
               fontWeight="medium"
               fontFamily="PlayFair Display"
