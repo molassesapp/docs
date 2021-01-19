@@ -25,6 +25,7 @@ export default function App(props: any) {
               src="https://www.molasses.app/pirateship.png"
               width="50"
               height="45"
+              style={{ height: 45 }}
             />
             <Box
               fontWeight="medium"
