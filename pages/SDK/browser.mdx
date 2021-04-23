@@ -128,7 +128,7 @@ Will check if feature is active for ALL users
 
 Will check if the feature is active for this particular based on the segment they are in.
 
-### `experimentStarted(featureKey: string, additionalInformation: string[string], user: User)`
+### `experimentStarted(featureKey: string, additionalInformation: string[string], user: User): void`
 
 Will send an event started message when a user starts an a/b tests. This includes, whether user was in the experimental group (control or experiment), the experiment that was being tested and other metadata. If you want to include additional metadata use the `additionalInformation` argument.
 
@@ -140,7 +140,7 @@ Will send an event success message when a user completes a set goal. This includ
 
 Sets the user as the default user for `isActive` and `experimentSuccess` so those methods can be called without a `User`
 
-## `resetUser(): void`
+### `resetUser(): void`
 
 Resets the user from `identify` to `undefined`
 
