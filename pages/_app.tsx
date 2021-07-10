@@ -21,12 +21,14 @@ export default function App(props: any) {
       <ChakraProvider resetCSS>
         <DokzProvider
           headerLogo={
-            <img
-              src="https://molasses.app/molasses-logo.png"
-              alt="molasseslogo"
-              width="170"
-              height="33"
-            />
+            <a href="https://www.molasses.app">
+              <img
+                src="https://molasses.app/molasses-logo.png"
+                alt="molasseslogo"
+                width="170"
+                height="33"
+              />
+            </a>
           }
           animate={true}
           fontFamily={`Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`}
